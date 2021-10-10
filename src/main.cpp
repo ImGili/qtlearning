@@ -2,7 +2,7 @@
  * @Author: ImGili
  * @Description: 
  */
-#include"qtlearning/1_create_window.h"
+#include"qtlearning/1_widget.h"
 #include<iostream>
 int main(int argc, char *argv[])
 {

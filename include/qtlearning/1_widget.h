@@ -25,7 +25,7 @@ namespace glx0102
         QApplication::translate("childwidget", "Top-level widget"));
 
     QPushButton* button = new QPushButton(
-        QApplication::translate("childwidge", "Press me"), &window
+        QApplication::translate("childwidget", "Press me"), &window
     );
     button->move(100, 100);
     button->show();
