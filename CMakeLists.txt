@@ -10,6 +10,10 @@ endif()
 if(UNIX AND NOT APPLE)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wno-parenthese  -std=c++17")
 endif()
+if(APPLE)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wno-parenthese  -std=c++17")
+endif()
+
 
 # 查找QT包
 find_package(Qt6 COMPONENTS Widgets) # special case: add
