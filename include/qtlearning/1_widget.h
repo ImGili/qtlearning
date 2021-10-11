@@ -22,10 +22,10 @@ namespace glx0102
     window.resize(320, 240);
     window.show();
     window.setWindowTitle(
-        QApplication::translate("childwidget", "Top-level widget"));
+        QApplication::translate(u8"childwidget", u8"Top-level widget"));
 
     QPushButton* button = new QPushButton(
-        QApplication::translate("childwidget", "Press me"), &window
+        QApplication::translate(u8"childwidget", u8"Press me"), &window
     );
     button->move(100, 100);
     button->show();
@@ -40,7 +40,7 @@ namespace glx0103
     QApplication app(argc, argv);
     QWidget window;
     QLabel* label = new QLabel(
-        QApplication::translate("windowlayout", "Name: ")
+        QApplication::translate(u8"windowlayout", u8"Name: ")
     );
     QLineEdit* edit = new QLineEdit();
 
@@ -51,7 +51,7 @@ namespace glx0103
 
     window.setLayout(layout);
     window.setWindowTitle(
-        QApplication::translate("windowlayout", "Window layout"));
+        QApplication::translate(u8"windowlayout", u8"Window layout"));
     window.show();
     return app.exec();
     }
@@ -80,7 +80,7 @@ namespace glx0104
     list->setModel(model);
     list->setRootIndex(model->index(QDir::currentPath()));
 
-    splitter->setWindowTitle("两个View使用同一个Model");
+    splitter->setWindowTitle(u8"两个View使用同一个Model");
     splitter->show();
 
     return app.exec();
@@ -154,7 +154,7 @@ namespace glx0107
     list->setModel(model);
     list->setRootIndex(model->index(QDir::currentPath()));
     list->setSelectionModel(tree->selectionModel());
-    splitter->setWindowTitle("两个View使用同一个Model");
+    splitter->setWindowTitle(u8"两个View使用同一个Model");
     splitter->show();
 
     return app.exec();
