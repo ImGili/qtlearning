@@ -1,4 +1,4 @@
-#include"spinboxdelegate.h"
+#include"delegate.h"
 #include <QSpinBox>
 
 //! [0]
