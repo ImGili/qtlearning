@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(firstUiTest VERSION 0.1 LANGUAGES CXX)
+project(learnQTWidget_t0_firstUiTest VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 

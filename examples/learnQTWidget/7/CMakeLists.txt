@@ -1,7 +1,7 @@
 # Generated from rasterwindow.pro.
 
 cmake_minimum_required(VERSION 3.16)
-project(simpleViewModel LANGUAGES CXX)
+project(learnQTWidget_7_viewsUseSameSelect LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -10,8 +10,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 # find_package(Qt6 COMPONENTS Widgets)
-
-
 
 # 添加应用                                    
 qt_add_executable(${PROJECT_NAME}

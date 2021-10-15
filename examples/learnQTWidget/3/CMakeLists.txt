@@ -1,14 +1,16 @@
 # Generated from rasterwindow.pro.
 
 cmake_minimum_required(VERSION 3.16)
-project(firstwidget LANGUAGES CXX)
+project(learnQTWidget_3_widgetLayout LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
+
 # find_package(Qt6 COMPONENTS Widgets)
+
 
 
 # 添加应用                                    

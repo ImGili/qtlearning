@@ -1,15 +1,13 @@
 # Generated from rasterwindow.pro.
 
 cmake_minimum_required(VERSION 3.16)
-project(QpushButton LANGUAGES CXX)
+project(learnQTWidget_1_firstwidget LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
-
-
 # find_package(Qt6 COMPONENTS Widgets)
 
 

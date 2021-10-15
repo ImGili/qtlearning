@@ -16,12 +16,21 @@ find_package(Qt6 COMPONENTS Gui)
 find_package(Qt6 COMPONENTS Widgets)
 find_package(Qt6 COMPONENTS UiTools)
 
-add_subdirectory(examples/t0)
-add_subdirectory(examples/1)
-add_subdirectory(examples/2)
-add_subdirectory(examples/3)
-add_subdirectory(examples/4)
-add_subdirectory(examples/5)
-add_subdirectory(examples/6)
-add_subdirectory(examples/7)
-add_subdirectory(examples/8)
+# 学习QT core
+# 测试cout在qt中是否正常运行
+add_subdirectory(examples/learnQTCore/1)
+# 测试qt core的属性系统
+add_subdirectory(examples/learnQTCore/2)
+
+
+
+# 学习QT Widgtet
+add_subdirectory(examples/learnQTWidget/t0)
+add_subdirectory(examples/learnQTWidget/1)
+add_subdirectory(examples/learnQTWidget/2)
+add_subdirectory(examples/learnQTWidget/3)
+add_subdirectory(examples/learnQTWidget/4)
+add_subdirectory(examples/learnQTWidget/5)
+add_subdirectory(examples/learnQTWidget/6)
+add_subdirectory(examples/learnQTWidget/7)
+add_subdirectory(examples/learnQTWidget/8)

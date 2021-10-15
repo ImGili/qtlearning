@@ -1,7 +1,7 @@
 # Generated from rasterwindow.pro.
 
 cmake_minimum_required(VERSION 3.16)
-project(viewsUseSameModel LANGUAGES CXX)
+project(learnQTCore_2_property_system_test1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -9,7 +9,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# find_package(Qt6 COMPONENTS Widgets)
 
 # 添加应用                                    
 qt_add_executable(${PROJECT_NAME}
@@ -23,5 +22,6 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 
 # 链接库文件
 target_link_libraries(${PROJECT_NAME} PUBLIC
+    Qt::Core
     Qt::Widgets
 )
