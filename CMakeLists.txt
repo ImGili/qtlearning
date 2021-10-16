@@ -21,6 +21,8 @@ find_package(Qt6 COMPONENTS UiTools)
 add_subdirectory(examples/learnQTCore/1)
 # 测试qt core的属性系统
 add_subdirectory(examples/learnQTCore/2)
+# 信号与插槽（signals and slots）
+add_subdirectory(examples/learnQTCore/3)
 
 
 

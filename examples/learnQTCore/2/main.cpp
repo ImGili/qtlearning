@@ -1,18 +1,15 @@
-#include<QtWidgets>
-#include<QVariant>
-#include<QPushButton>
-#include<iostream>
+#include <QtWidgets>
+#include <QVariant>
+#include <QPushButton>
+#include <iostream>
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    QPushButton *button = new QPushButton;
-    QObject *object = button;
+    QPushButton quit("Quit"); // quit后创建，后析构，会被析构两次
+    QWidget window;  // window后创建，先析构，同时析构quit
 
-    button->setDown(true);
-    object->setProperty("down", true);
+    quit.setParent(&window);
 
-    QVariant value = object->property("down");
-
-    return app.exec();
+    return 0;
 }

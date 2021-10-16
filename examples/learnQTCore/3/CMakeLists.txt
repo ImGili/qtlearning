@@ -1,7 +1,7 @@
 # Generated from rasterwindow.pro.
 
 cmake_minimum_required(VERSION 3.16)
-project(learnQTCore_2_pobject_tree LANGUAGES CXX)
+project(learnQTCore_3_signals_and_slots LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -13,6 +13,8 @@ set(CMAKE_AUTOUIC ON)
 # 添加应用                                    
 qt_add_executable(${PROJECT_NAME}
     main.cpp
+    counter.h
+    counter.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
