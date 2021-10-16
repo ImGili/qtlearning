@@ -23,6 +23,8 @@ add_subdirectory(examples/learnQTCore/1)
 add_subdirectory(examples/learnQTCore/2)
 # 信号与插槽（signals and slots）
 add_subdirectory(examples/learnQTCore/3)
+# 信号与槽 实例 数字时钟
+add_subdirectory(examples/learnQTCore/4)
 
 
 

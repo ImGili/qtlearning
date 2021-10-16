@@ -5,7 +5,7 @@
 ```zsh
 brew install qt
 ```
+### Windows平台
+官网下载qt，安装mingw预编译版
 
-## 案例
-1、第一个窗口
-2、QPushButton
+配置环境变量到qt bin目录

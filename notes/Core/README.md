@@ -89,3 +89,18 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
+
+## 信号与槽(signals and slots)
+信号的参数必须大于等于槽的参数
+
+以下方式是可行的
+```c++
+connect(sender, SIGNAL(destroyed(QObject*)), this, SLOT(objectDestroyed(Qbject*)));
+connect(sender, SIGNAL(destroyed(QObject*)), this, SLOT(objectDestroyed()));
+connect(sender, SIGNAL(destroyed()), this, SLOT(objectDestroyed()));
+```
+
+以下方式是不可行的
+```c++
+connect(sender, SIGNAL(destroyed()), this, SLOT(objectDestroyed(QObject*)));
+```
