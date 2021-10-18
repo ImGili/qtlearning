@@ -6,6 +6,6 @@ class Digitalclock : public QLCDNumber
 public:
     Digitalclock(QWidget* parent = nullptr);
 
-private:
+private slots:
     void showTime();
 };
