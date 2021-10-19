@@ -26,6 +26,9 @@ add_subdirectory(examples/learnQTCore/3)
 # 信号与槽 实例 数字时钟
 add_subdirectory(examples/learnQTCore/4)
 
+# 学习QT gui
+add_subdirectory(examples/learnQTGUI/1)
+add_subdirectory(examples/learnQTGUI/2)
 
 
 # 学习QT Widgtet
@@ -38,3 +41,7 @@ add_subdirectory(examples/learnQTWidget/5)
 add_subdirectory(examples/learnQTWidget/6)
 add_subdirectory(examples/learnQTWidget/7)
 add_subdirectory(examples/learnQTWidget/8)
+
+
+# 测试
+add_subdirectory(examples/bymyself/1)
