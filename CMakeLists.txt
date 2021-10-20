@@ -29,6 +29,7 @@ add_subdirectory(examples/learnQTCore/4)
 # 学习QT gui
 add_subdirectory(examples/learnQTGUI/1)
 add_subdirectory(examples/learnQTGUI/2)
+add_subdirectory(examples/learnQTGUI/test1)
 
 
 # 学习QT Widgtet

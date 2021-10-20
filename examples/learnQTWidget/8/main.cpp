@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
     QStandardItemModel model(4, 2);
     QTableView tableView;
     tableView.setModel(&model);
-
     SpinBoxDelegate delegate;
     tableView.setItemDelegate(&delegate);
 //! [0]
