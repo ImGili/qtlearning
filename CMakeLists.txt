@@ -34,6 +34,7 @@ add_subdirectory(examples/learnQTGUI/test1)
 
 # 学习QT Widgtet
 add_subdirectory(examples/learnQTWidget/t0)
+add_subdirectory(examples/learnQTWidget/t1)
 add_subdirectory(examples/learnQTWidget/1)
 add_subdirectory(examples/learnQTWidget/2)
 add_subdirectory(examples/learnQTWidget/3)
