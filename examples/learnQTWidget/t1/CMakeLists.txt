@@ -10,6 +10,12 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 
+find_package( OpenCV REQUIRED )
+
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+
+
+
 set(PROJECT_SOURCES
         main.cpp
         testwindow.h
@@ -24,4 +30,5 @@ qt_add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
     Qt::Widgets
+    ${OpenCV_LIBS} 
 )
