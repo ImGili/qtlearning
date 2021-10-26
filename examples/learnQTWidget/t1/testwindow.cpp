@@ -20,10 +20,15 @@ testWindow::testWindow(QWidget *parent)
         std::cout << "Could not read image :" << image_path << std::endl;
         return ;
     }
-    // imshow("Display image", img);
     QImage qimg(img.data, img.cols, img.rows, QImage::Format::Format_BGR888);
-    ui->label->setPixmap(QPixmap::fromImage(qimg));
-    // int k = waitKey(0);
+    QPixmap pixmap = QPixmap::fromImage(qimg);
+    int with = ui->labimg->width();
+    int height = ui->labimg->height();
+     QPixmap fitpixmap = pixmap.scaled(with, height, Qt::KeepAspectRatio, Qt::SmoothTransformation); 
+    ui->labimg->setPixmap(fitpixmap);
+    // ui->labimg->setPixmap(pixmap);
+    
+
 }
 
 testWindow::~testWindow()
@@ -37,5 +42,5 @@ void testWindow::on_push_button_clicked()
     std::cout << "button clicked" << std::endl;
     isLabelvisible = !isLabelvisible;
 
-    ui->label->setVisible(isLabelvisible);
+    ui->labimg->setVisible(isLabelvisible);
 }
